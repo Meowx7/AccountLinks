@@ -2,7 +2,7 @@ body {/*背景などfont*/
   font-family: "Inter", sans-serif; /* フォントをInterに設定 */
   
   background-image: url(images/wallpaper.jpg); /* 背景画像のパスを指定 */
-  background-size: 400% 500%; /* 拡大 */
+  background-size: 300% 500%; /* 拡大 */
   background-position: center; /* 背景画像の位置を中央に設定 */
   background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
 }
