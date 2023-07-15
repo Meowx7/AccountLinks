@@ -1,0 +1,159 @@
+body {/*背景などfont*/
+  font-family: "Inter", sans-serif; /* フォントをInterに設定 */
+  
+  background-image: url(images/wallpaper.jpg); /* 背景画像のパスを指定 */
+  background-size: 300% 400%; /* 拡大 */
+  background-position: center; /* 背景画像の位置を中央に設定 */
+  background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+}
+
+.accountlink {
+  margin-top: 200px; /* 適切なマージンを設定 */
+  text-align: center;
+}
+
+.accountlink .profile {
+  margin-bottom: 20px;
+}
+
+.accountlink .profile img {
+  width: 150px; /* プロフィール写真の幅を調整 */
+  height: 150px; /* プロフィール写真の高さを調整 */
+  border-radius: 50%; /* 円形のプロフィール写真にするための設定 */
+  object-fit: cover; /* プロフィール写真のアスペクト比を維持し、枠内に収まるようにする */
+  border: 2px solid #fff; /* 枠の色と幅を設定 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 枠に影を追加 */
+}
+
+.accountlink .profile h1 {
+  font-size: 24px; /* 名前の文字サイズを調整 */
+  margin-top: 10px;
+}
+
+h1 {
+  letter-spacing: 3px; /* KKの文字間の間隔を調整する値を指定 */
+  line-height: 20px; /* 行の高さを調整する値を指定 */
+  color: rgb(255, 255, 255); /* 文字の色を設定 */
+}
+
+h2 {
+  letter-spacing: -1px; /* @---の文字間の間隔を調整する値を指定 */
+  line-height: 0px; /* 行の高さを調整する値を指定 */
+  color: rgb(255, 255, 255); /* 文字の色を設定 */
+}
+.accountlink .buttons {
+  display: flex;
+  flex-direction: column; /* ボタンを縦並びにする */
+  align-items: center; /* ボタンを中央揃えにする */
+}
+
+.accountlink .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* テキストを水平方向に中央揃え */
+  padding: 10px 200px; /*ボタンの大きさ*/
+  margin: 15px 0; /* ボタン間の余白を追加 */
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  flex-grow: 1; /* ボタンの横幅を自動調整 */
+  min-width: 250px; /* 最小のボタン幅を指定 */
+}
+
+.accountlink .button i {
+  margin-right: 10px; /* アイコンとテキストの間隔を調整 */
+}
+
+.accountlink .button:hover {
+  background-color: #ff0000; /* ボタンのホバー時の背景色を設定 */
+}
+
+.accountlink .button.instagram1 {
+  background-color: #20262E; /* ボタンの背景色を設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影の設定 */
+}
+
+.accountlink .button.instagram2 {
+  background-color: #20262E; /* ボタンの背景色を設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影の設定 */
+}
+
+.accountlink .button.discord {
+  background-color: #20262E; /* ボタンの背景色を設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影の設定 */
+}
+
+.accountlink .button.github {
+  background-color: #20262E; /* ボタンの背景色を設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影の設定 */
+}
+
+.accountlink .button.steam {
+  background-color: #20262E; /* ボタンの背景色を設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影の設定 */
+}
+
+.accountlink .button.VALORANT {
+  background-color: #20262E; /* ボタンの背景色を設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影の設定 */
+}
+
+/*ここからpassword*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #000000;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px; /* ポップアップの四角の丸みを設定 */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: none;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+}
