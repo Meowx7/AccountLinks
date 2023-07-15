@@ -1,26 +1,3 @@
-/* styles.css */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120px; /* ヘッダーの高さに合わせて調整と同じがいい */
-  background-color: #ff0000;
-  z-index: 100;
-}
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo img {
-  max-height: 80%;
-  max-width: 80%;/*多分大きさ*/
-}
-
 body {/*背景などfont*/
   font-family: "Inter", sans-serif; /* フォントをInterに設定 */
   
@@ -30,40 +7,6 @@ body {/*背景などfont*/
   background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
 }
 
-.navbar {
-  position: fixed;
-  top: 120px;/* ヘッダーの高さに合わせて調整 */
-  left: 0;
-  width: 100%;
-  background-color: #f2f2f2;
-  z-index: 99;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar ul li {
-  margin-right: 100px; /*メニュの間隔*/
-}
-
-.navbar ul li:last-child {
-  margin-right: 0;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  font-size:25px; /* メニューバーの文字サイズを調整 */
-  color: rgb(0, 0, 0);
-  font-weight: 750; /* 太さ */
-}
-
-/*ここからaccount*/
 /* accountstyles.css */
 
 .accountlink {
