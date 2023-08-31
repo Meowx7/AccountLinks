@@ -1,40 +1,35 @@
-// モーダルを開く
-function openPasswordModal(event) {
-  event.preventDefault(); // リンクのデフォルトの動作をキャンセル
-  var modal = document.getElementById("password-modal");
-  modal.style.display = "block";
-  clearErrorMessage();
-}
+// script.js
+const showLineButton = document.getElementById('showline');
+const showDiscordButton = document.getElementById('showdiscord');
+const showSteamButton = document.getElementById('showsteam');
+const linePopup = document.getElementById('linePopup');
+const discordPopup = document.getElementById('discordPopup');
+const steamPopup = document.getElementById('steamPopup');
+const closeLinePopupButton = document.getElementById('closeLinePopup');
+const closeDiscordPopupButton = document.getElementById('closeDiscordPopup');
+const closeSteamPopupButton = document.getElementById('closeSteamPopup');
+showLineButton.addEventListener('click', () => {
+  linePopup.style.display = 'flex';
+});
 
-// モーダルを閉じる
-function closePasswordModal() {
-  var modal = document.getElementById("password-modal");
-  modal.style.display = "none";
-  clearErrorMessage();
-}
+showDiscordButton.addEventListener('click', () => {
+  discordPopup.style.display = 'flex';
+});
 
-// パスワードチェック
-function checkPassword() {
-  var password = document.getElementById("password-input").value;
-  var errorMessage = document.getElementById("password-error");
+showSteamButton.addEventListener('click', () => {
+  steamPopup.style.display = 'flex';
+});
 
-  // パスワードのチェック
-  if (password === "valorantgomi") {
-    // 認証成功したら、指定のURLに遷移する
-    window.location.href = "valorant.html";
-  } else {
-    showErrorMessage("あんたばかぁ？.");
-  }
-}
 
-// エラーメッセージを表示
-function showErrorMessage(message) {
-  var errorMessage = document.getElementById("password-error");
-  errorMessage.textContent = message;
-}
+closeLinePopupButton.addEventListener('click', () => {
+  linePopup.style.display = 'none';
+});
 
-// エラーメッセージをクリア
-function clearErrorMessage() {
-  var errorMessage = document.getElementById("password-error");
-  errorMessage.textContent = "";
-}
+closeDiscordPopupButton.addEventListener('click', () => {
+  discordPopup.style.display = 'none';
+});
+
+closeSteamPopupButton.addEventListener('click', () => {
+  steamPopup.style.display = 'none';
+});
+
